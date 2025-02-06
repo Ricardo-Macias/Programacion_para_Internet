@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Formulario</title>
+        <script>
+            function validar(){
+                var correo = document.forma01.correo.value;
+                var pass = document.forma01.pass.value;
+                var rol = document.forma01.rol.value;
+
+                if(correo == "" || pass == "" || rol == "0"){
+                    alert("Faltan campos por llenar");
+                } else{
+                    alert("Campos llenos");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="forma01" method="get">
+            <label>Correo</label>
+            <input type="text" name="correo" id="correo" placeholder="Escribe tu correo"/><br><br>
+
+            <label>Contraseña</label>
+            <input type="text" name="pass" id="pass" placeholder="Escribe tu pass" /><br><br>
+
+            <select name="rol" id="rol">
+                <option value="0">Selecciona</option>
+                <option value="1">Gerente</option>
+                <option value="2">Ejecutivo</option>
+            </select><br><br>
+            <input onclick="validar(); return false;" type="submit" value="Enviar datos" />
+        </form>
+    </body>
+</html>
