@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>Actividad 09</title>
+        <style>
+            #table{
+                width: 960px;
+                height: 800px;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                border: 1px solid #000;
+            }
+
+            .table-row{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                border: 1px solid #000;
+                
+            }
+
+            .table-row-col{
+                border-right: 1px solid #000;
+                place-content: center;
+                
+            }
+
+            .table {
+                width: 50%;
+                height: 50%;
+                border: 1px solid #000;
+                margin: auto;
+            }
+
+            /*
+            --PRIMERA TABLA--
+            */
+
+            #table1 {
+                display: grid;
+                grid-template-rows: 1fr 9fr;
+            }
+
+            #table1-row2{
+                display: grid;
+                grid-template-columns: 1fr 9fr;
+            }
+
+            /*
+            --SEGUNDA TABLA--
+            */
+
+            #table2 {
+                display: grid;
+                grid-template-rows: 1fr 8fr 1fr;
+            }
+
+            #table2-row2{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            /*
+            --TERCERA TABLA--
+            */
+
+            #table3 {
+                display: grid;
+                grid-template-rows: 1fr 8fr 1fr;
+            }
+
+            #table3-row2{
+                display: grid;
+                grid-template-columns: 1fr 9fr;
+            }
+
+            #table3-row2-col2{
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+
+            /*
+            --CUARTA TABLA--
+            */
+
+            #table4{
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+
+            .table4-row{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .row{
+                border-bottom: 1px solid #000;
+            }
+
+            .col{
+                border-right: 1px solid #000;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="table">
+            <div class="table-row">
+
+                <div class="table-row-col">
+                    <div id="table1" class="table">
+                        <div id="table1-row1" class="row"></div>
+                        <div id="table1-row2">
+                            <div id="table1-row2-col1" class="col"></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-row-col">
+                    <div id="table2" class="table">
+                        <div class="row"></div>
+                        <div id="table2-row2" class="row">
+                            <div class="col"></div>
+                            <div></div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-row">
+
+                <div class="table-row-col">
+                    <div id="table3" class="table">
+                        <div class="row"></div>
+                        <div id="table3-row2" class="row">
+                            <div id="table3-row2-col1" class="col"></div>
+                            <div id="table3-row2-col2">
+                                <div class="row"></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                
+                <div class="table-row-col">
+                    <div id="table4" class="table">
+                        <div class="row table4-row">
+                            <div class="col"></div>
+                            <div></div>
+                        </div>
+                        <div class="table4-row">
+                            <div class="col"></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
