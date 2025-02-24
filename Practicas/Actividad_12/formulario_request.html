@@ -7,17 +7,17 @@
                 var nombre = document.forma01.nombre.value;
                 var correo = document.forma01.correo.value;
                 var genero = document.forma01.sexo.value;
-                var boletin = document.forma01.boletin.checked ? "Si":"";
+                var boletin = document.forma01.boletin.checked;
                 var comentario = document.forma01.comentario.value;
                 var carrera = document.forma01.carrera.value;
-                var contraseña = document.forma01.pasw.value;
+                var pass = document.forma01.pasw.value;
                 var promedio = document.forma01.promedio.value;
                 var fecha = document.forma01.fecha.value;
 
-                var campos = [nombre, correo, genero, boletin, comentario, carrera, contraseña, promedio, fecha]
+                var campos = [nombre, correo, genero, boletin, comentario, carrera, pass, promedio, fecha]
 
                 if (campos.some(campos => campos == "" || campos == "0")){
-                    alert("Faltan campos por llenar ");
+                    alert("Faltan campos por llenar");
                 } else{
                     document.forma01.method = 'post';
                     document.forma01.action = 'recibe.php';
@@ -54,7 +54,7 @@
                 <option value="2">Ing. Computacion</option>
             </select>
             <br>
-            <label for="pass">Contraseña:</label>
+            <label for="pass">Contraseña</label>
             <input type="password" name="pasw">
             <br>
             <label for="promedio">Promedio:</label>
