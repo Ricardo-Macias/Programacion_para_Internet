@@ -4,8 +4,8 @@
         <script>
             function validar(){
                 var rows = document.forma1.rows.value;
-                if (rows == ''){
-                    alert("Seleccione un valor mayor a 0");
+                if (rows == '0'){
+                    alert("Seleccione un valor");
                 } else{
                     document.forma01.submit();
                 }
@@ -17,8 +17,9 @@
             <label for='rows'>Filas</label>
             <select name="rows">
                 <?php
-                    for($count; $count <= 5000; $count++){
-                        echo "<option value='$count'> $count </option>";
+                    for($count=0; $count <= 5000; $count++){
+                        $value_rows = ($count == 0) ? 'Selecciona' : $count;
+                        echo "<option value='$count'>$value_rows</option>";
                     }
                 ?>
             </select>
