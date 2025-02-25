@@ -3,7 +3,7 @@
         <title>Actividad 12</title>
         <script>
             function validar(){
-                var rows = document.forma1.rows.value;
+                var rows = document.forma01.rows.value;
                 if (rows == '0'){
                     alert("Seleccione un valor");
                 } else{
@@ -13,13 +13,13 @@
         </script>
     </head>
     <body>
-        <form name="forma1" action="table.php" method="post">
+        <form name="forma01" action="table.php" method="post">
             <label for='rows'>Filas</label>
-            <select name="rows">
+            <select name="rows" id="rows">
                 <?php
-                    for($count=0; $count <= 5000; $count++){
-                        $value_rows = ($count == 0) ? 'Selecciona' : $count;
-                        echo "<option value='$count'>$value_rows</option>";
+                    echo "<option value='0' selected>Seleciona</option>";
+                    for($count=1; $count <= 5000; $count++){
+                        echo "<option value='$count'>$count</option>";
                     }
                 ?>
             </select>
