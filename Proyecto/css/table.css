@@ -1,0 +1,15 @@
+.section_title{
+    font-size: 2rem;
+}
+
+.table{
+    display: table;
+}
+
+.row{
+    display: table-row;
+}
+
+.column{
+    display: table-cell;
+}
