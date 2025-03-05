@@ -1,18 +1,32 @@
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 5px;
+    color: #fff;
+    background-color: #071325;
+    border-radius: 5px;
+
+}
+
 .section_title {
     font-size: 2rem;
     margin: 15px 40px;
 }
 
 .table {
-    width: 90vw;
+    width: 95%;
     margin: auto auto;
+}
+
+.table-header{
+    text-align: center;
 }
 
 .row {
     display: grid;
-    grid-template-columns: 10% 25% 40% 10% 5% 5% 5%;
+    grid-template-columns: 10% 25% 35% 9% 7% 7% 7%;
     margin: 10px 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #85784a;
 }
 
 .id, .name, .email {
