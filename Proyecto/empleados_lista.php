@@ -43,7 +43,7 @@
                         $id = $row["id"];
                         $name = $row["nombre"];
                         $mail = $row["correo"];
-                        $role = $row["rol"];
+                        $role = ($row["rol"] == "1") ? "Gerente":"Ejecutivo";
 
                         echo "<div class=\"column id\">$id</div>";
                         echo "<div class=\"column name\">$name</div>";
