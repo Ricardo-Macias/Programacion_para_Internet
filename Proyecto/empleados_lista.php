@@ -24,18 +24,18 @@
             </div>
         </div>
         <div class="content">
-            <div>
+            <div class="bottom">
                 <a href="empleados_alta.php">Agregar empleado</a>
             </div>
             <div class="table">
                 <div class="table-header row">
-                    <div>ID</div>
-                    <div>Nombre</div>
-                    <div>Correo</div>
-                    <div>Rol</div>
-                    <div>Detalles</div>
-                    <div>Editar</div>
-                    <div>Eliminar</div>
+                    <div class="column">ID</div>
+                    <div class="column">Nombre</div>
+                    <div class="column">Correo</div>
+                    <div class="column">Rol</div>
+                    <div class="column">Detalles</div>
+                    <div class="column">Editar</div>
+                    <div class="column">Eliminar</div>
                 </div>
                 <?php
                     while ($row = $res->fetch_array()){
@@ -49,9 +49,9 @@
                         echo "<div class=\"column name\">$name</div>";
                         echo "<div class=\"column email\">$mail</div>";
                         echo "<div class=\"column role\">$role</div>";
-                        echo "<div class=\"column details\"><a href=\"empleados_elimina.php?id=$id\"><i class=\"fa-solid fa-circle-info\"></i></a></div>";
+                        echo "<div class=\"column details\"><a href=\"\"><i class=\"fa-solid fa-circle-info\"></i></a></div>";
                         echo "<div class=\"column edit\"><a href=\"\"><i class=\"fa-solid fa-pen-to-square\"></i></a></div>";
-                        echo "<div class=\"column delete\"><a href=\"\"><i class=\"fa-solid fa-trash\"></i></a></div>";
+                        echo "<div class=\"column delete\"><a href=\"empleados_elimina.php?id=$id\"><i class=\"fa-solid fa-trash\"></i></a></div>";
                         echo "</div>";
                     }
                 ?>
