@@ -35,6 +35,12 @@ body {
     border-radius: 5px;
 }
 
+.bottom:hover{
+    background-color: #0b2c0b;
+    font-size: 17px;
+    font-weight: bold;
+}
+
 .bottom a {
     text-decoration: none;
     color: #fff;
