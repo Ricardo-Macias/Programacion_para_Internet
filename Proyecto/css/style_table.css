@@ -1,3 +1,9 @@
+body {
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+}
+
 .content {
     width: 80%;
     margin: 0 auto;
@@ -8,9 +14,31 @@
 
 }
 
+.head {
+    background-color: #071325;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
 .section_title {
     font-size: 2rem;
-    margin: 15px 40px;
+    padding: 15px 30px;
+    font-weight: bold;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80%;
+    padding: 5px;
+    background-color: #228B22;
+    border-radius: 5px;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .table {
@@ -19,14 +47,19 @@
 }
 
 .table-header{
+    font-weight: bold;
     text-align: center;
 }
 
 .row {
     display: grid;
-    grid-template-columns: 10% 25% 35% 9% 7% 7% 7%;
+    grid-template-columns: 8% 25% 35% 8% 8% 8% 8%;
     margin: 10px 0;
     border-bottom: 2px solid #85784a;
+}
+
+.column {
+    overflow: hidden;
 }
 
 .id, .name, .email {
