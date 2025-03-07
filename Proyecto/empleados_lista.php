@@ -43,11 +43,12 @@
                         echo "<div class=\"row\">";
                         $id = $row["id"];
                         $name = $row["nombre"];
+                        $last_name = $row["apellidos"];
                         $mail = $row["correo"];
                         $role = ($row["rol"] == "1") ? "Gerente":"Ejecutivo";
 
                         echo "<div class=\"column id\">$id</div>";
-                        echo "<div class=\"column name\">$name</div>";
+                        echo "<div class=\"column name\">$name $last_name</div>";
                         echo "<div class=\"column email\">$mail</div>";
                         echo "<div class=\"column role\">$role</div>";
                         echo "<div class=\"column details\"><a href=\"\"><i class=\"fa-solid fa-circle-info\"></i></a></div>";
