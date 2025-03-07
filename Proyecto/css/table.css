@@ -21,7 +21,8 @@
 
 .list {
     background-color: #071325;
-        border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
 }
 
 .table {
