@@ -1,0 +1,22 @@
+.label {
+    padding-bottom: 5px;
+}
+
+.text {
+    margin-bottom: 10px;
+}
+
+.employed-name{
+    display: inline-block;
+    width: 20%;
+}
+
+.employed-last-name{
+    display: inline-block;
+    width: 30%;
+    margin-left: 10px;
+}
+
+.text-name, .text-last-name{
+    width: 90%;
+}
