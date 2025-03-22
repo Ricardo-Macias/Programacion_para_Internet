@@ -3,10 +3,10 @@
     require "funciones/conecta.php";
     $con = conecta();
 
-    $id = $_REQUEST["id"];
+    $id = $_REQUEST["id_employed"];
 
     $sql = "UPDATE empleados SET eliminado = 1 WHERE id = $id";
     $res = $con->query($sql);
 
-    header("Location: empleados_lista.php");
+    echo $res;
 ?>
