@@ -8,7 +8,8 @@ function recibe() {
     var form = [name, last_name, email, password, rol];
 
     if (form.some(form => form == "" || form == "0")) {
-        alert("Faltan campos por llenar");
+        $('.mensaje').html('Faltan campos por llenar');
+        setTimeout("$('.mensaje').html('');", 5000);
     } else {
         document.employed.method = 'post';
         document.employed.action = 'empleados_alta.php';
