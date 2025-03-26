@@ -29,8 +29,8 @@
             </div>
         </div>
         <div class="content list">
-            <div class="bottom">
-                <a href="empleados_alta.php">Agregar empleado</a>
+            <div class="botton">
+                <a href="empleados_formulario.html">Agregar empleado</a>
             </div>
             <div class="table">
                 <div class="table-header row">
