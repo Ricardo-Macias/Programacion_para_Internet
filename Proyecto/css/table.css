@@ -1,4 +1,4 @@
-.bottom {
+.botton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,7 @@
     border-radius: 5px;
 }
 
-.bottom:hover{
+.botton:hover{
     background-color: #0b2c0b;
     font-size: 17px;
     font-weight: bold;
