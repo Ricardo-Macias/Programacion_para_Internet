@@ -8,11 +8,32 @@ function recibe() {
     var form = [name, last_name, email, password, rol];
 
     if (form.some(form => form == "" || form == "0")) {
-        $('.mensaje').html('Faltan campos por llenar');
-        setTimeout("$('.mensaje').html('');", 5000);
+        $('.message-employed').html('Faltan campos por llenar');
+        setTimeout("$('.message-employed').html('');", 5000);
     } else {
         document.employed.method = 'post';
-        document.employed.action = 'empleados_alta.php';
+        document.employed.action = 'empleados_salva.php';
         document.employed.submit();
     }
+}
+
+function validateEmail() {
+    var email = $('#txt-email').val();
+    
+    $.ajax({
+        url: 'funciones/select_email.php',
+        type: 'post',
+        datatype: 'text',
+        data: 'email=' + email,
+        success: function (result) {
+            if (result != "") {
+                $(".message-email").html("El correo " + result + " ya existe");
+                setTimeout("$('.message-email').html('');", 5000);
+                $('#txt-email').val('');
+            }
+        },
+            error: function () {
+                alert('Error archivo no encontrado ...');
+            }
+    });
 }
