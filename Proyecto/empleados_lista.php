@@ -30,7 +30,7 @@
         </div>
         <div class="content list">
             <div class="botton">
-                <a href="empleados_formulario.html">Agregar empleado</a>
+                <a href="empleados_alta.html">Agregar empleado</a>
             </div>
             <div class="table">
                 <div class="table-header row">
