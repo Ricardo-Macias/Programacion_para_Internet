@@ -4,19 +4,40 @@
 
 .text {
     margin-bottom: 10px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.message{
+    color: #ff0000;
+    padding: 10px 0;
+}
+
+.return-botton {
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+
+.grid-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*
+    ----------------------------------------------------------
+*/
+.employed {
+    width: 70%;
+    padding: 20px 0 5px 10px;
+    border: 1px solid #000;
 }
 
 .employed-name{
-    display: inline-block;
-    width: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.employed-last-name{
-    display: inline-block;
-    width: 30%;
-    margin-left: 10px;
-}
-
-.text-name, .text-last-name{
-    width: 90%;
+.text-email, .text-password, .text-rol {
+    width: 95%;
 }
