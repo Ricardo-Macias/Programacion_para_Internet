@@ -1,17 +1,25 @@
-.botton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 85%;
-    padding: 5px;
-    background-color: #228B22;
-    border-radius: 5px;
+.content-botton {
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    width: 14%;
 }
 
-.botton:hover{
-    background-color: #0b2c0b;
-    font-size: 17px;
-    font-weight: bold;
+.botton::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #e8e8e8;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.botton:hover::after {
+    transform: scaleX(1);
 }
 
 .list {
