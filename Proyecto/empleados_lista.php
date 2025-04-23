@@ -27,11 +27,13 @@
                     echo "Listado de empleados ($num)";
                 ?>
             </div>
+            <div class="content-botton">
+                <div class="botton">
+                    <a href="empleados_alta.html">Agregar empleado</a>
+                </div>
+            </div>
         </div>
         <div class="content list">
-            <div class="botton">
-                <a href="empleados_alta.html">Agregar empleado</a>
-            </div>
             <div class="table">
                 <div class="table-header row">
                     <div class="column">ID</div>
