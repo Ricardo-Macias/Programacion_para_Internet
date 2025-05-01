@@ -11,7 +11,7 @@
     $apellido = $row['apellidos'];
     $correo = $row['correo'];
     $password = $row['pass'];
-    $rol = $rol['rol'];
+    $rol = $row['rol'];
 ?>
 
 <html>
@@ -43,29 +43,29 @@
                         <div class="employed-name">
                             <div>
                                 <div class="label label-name">Nombre</div>
-                                <input name="name" class="text text-name" type="text" value="<?php $nombre ?>">
+                                <input name="name" class="text text-name" type="text" value="<?php echo $nombre ?>">
                             </div>
                             <div>
                                 <div class="label label-last-name">Apellidos</div>
-                                <input name="last_name" class="text text-last-name" type="text" value="<?php $apellido ?>">
+                                <input name="last_name" class="text text-last-name" type="text" value="<?php echo $apellido ?>">
                             </div>
                         </div>
 
                         <div class="employed-email">
                             <div class="label label-email">Correo</div>
                             <div class="message message-email"></div>
-                            <input onblur="validateEmail();" name="email" class="text text-email" id="txt-email" type="email" value="<?php $correo ?>">
+                            <input onblur="validateEmail();" name="email" class="text text-email" id="txt-email" type="email" value="<?php echo $correo ?>">
                         </div>
 
                         <div class="employed-password">
                             <div class="label label-password">Contraseña</div>
-                            <input name="password" class="text text-password" type="password" value="<?php $password ?>">
+                            <input name="password" class="text text-password" type="password" value="<?php echo $password ?>">
                         </div>
 
                         <div name="rol" class="employed-rol">
                             <div class="label label-rol">Rol</div>
-                            <select name="rol" class="text text-rol">
-                                <option value="0" selected>Selecciona</option>
+                            <select name="rol" class="text text-rol" value="1">
+                                <option value="0" >Selecciona</option>
                                 <option value="1">Gerente</option>
                                 <option value="2">Ejecutivo</option>
                             </select>
