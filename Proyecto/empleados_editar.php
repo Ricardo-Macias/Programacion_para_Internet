@@ -65,9 +65,8 @@
                         <div name="rol" class="employed-rol">
                             <div class="label label-rol">Rol</div>
                             <select name="rol" class="text text-rol" value="1">
-                                <option value="0" >Selecciona</option>
-                                <option value="1">Gerente</option>
-                                <option value="2">Ejecutivo</option>
+                                <option value="1" <?php echo ($rol == 1) ? 'selected' : '' ?>>Gerente</option>
+                                <option value="2" <?php echo ($rol == 2) ? 'selected' : '' ?>>Ejecutivo</option>
                             </select>
                         </div>
                     </div>
