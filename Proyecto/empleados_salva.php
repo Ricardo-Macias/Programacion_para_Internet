@@ -16,7 +16,7 @@
     $pos = $len - 1;
     $extension = $array[$pos];
 
-    $dir = "images/";
+    $dir = __DIR__."/images/";
 
     $nameEnc = md5_file($file);
     $new_file = "$nameEnc.$extension";
@@ -25,8 +25,8 @@
     VALUES ('$name', '$last_name', '$email', '$password_Enc', '$rol', '$file_name', '$new_file')";
 
     $res = $con->query($sql);
-
-    //copy($file, $dir.$new_file);
     
+    copy($file, $dir.$new_file);
+
     header("Location: empleados_lista.php");
 ?>

@@ -4,8 +4,9 @@ function recibe() {
     var email = document.employed.email.value;
     var password = document.employed.password.value;
     var rol = document.employed.rol.value;
+    var file = document.employed.files.value;
 
-    var form = [name, last_name, email, password, rol];
+    var form = [name, last_name, email, password, rol, file];
 
     if (form.some(form => form == "" || form == "0")) {
         $('.message-employed').html('Faltan campos por llenar');
