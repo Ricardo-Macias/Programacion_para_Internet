@@ -32,8 +32,10 @@
             <div class="section_title">
                 Editar Empleado
             </div>
-            <div class="botton return-botton">
-                <a href="empleados_lista.php">Regresar al listado</a>
+            <div class="content-botton">
+                <div class="botton">
+                    <a href="empleados_lista.php">Regresar al listado</a>
+                </div>
             </div>
         </div>
         <div class="content">
