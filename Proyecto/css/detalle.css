@@ -3,6 +3,8 @@
     border: 1px solid #000;
     border-radius: 5px;
     box-shadow: 4px 4px 10px #000;
+    background-color: #071325;
+    color: #fff;
 }
 
 .grid-content {
@@ -12,5 +14,9 @@
 
 .content div{
     padding: 10px;
-    
+}
+
+.info div {
+    border-bottom: 1px solid #85784a;
+    border-radius: 5px;
 }
