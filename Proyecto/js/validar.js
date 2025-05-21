@@ -18,6 +18,24 @@ function recibe() {
     }
 }
 
+function edit() {
+    var name = document.employed.name.value;
+    var last_name = document.employed.last_name.value;
+    var email = document.employed.email.value;
+    var rol = document.employed.rol.value;
+
+    var form = [name, last_name, email, rol];
+
+    if (form.some(form => form == "" || form == "0")) {
+        $('.message-employed').html('Faltan campos por llenar');
+        setTimeout("$('.message-employed').html('');", 5000);
+    } else {
+        document.employed.method = 'post';
+        document.employed.action = 'empleados_actualiza.php';
+        documetn.employed.submit();
+    }
+}
+
 function validateEmail() {
     var email = $('#txt-email').val();
     
