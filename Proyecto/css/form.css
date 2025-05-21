@@ -5,8 +5,10 @@
 .text {
     margin-bottom: 10px;
     height: 30px;
-    border: 1px solid #000;
+    border: 2px solid #85784a;
     border-radius: 8px;
+    background-color: #071325;
+    color: #fff;
 }
 
 .message{
@@ -24,13 +26,23 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(190 198 218);
+    border-radius: 8px;
+}
+
 /*
     ----------------------------------------------------------
 */
 .employed {
-    width: 70%;
+    width: 100%;
     padding: 20px 0 5px 10px;
-    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #071325;
+    box-shadow: 4px 4px 10px #85784a;
+    color: #fff;
 }
 
 .employed-name{
@@ -40,4 +52,8 @@
 
 .text-email, .text-password, .text-rol {
     width: 95%;
+}
+
+.text-name, .text-last-name {
+    width: 89%;
 }
