@@ -1,0 +1,16 @@
+.content {
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px #000;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content div{
+    padding: 10px;
+    
+}
