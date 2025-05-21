@@ -30,7 +30,7 @@
     <body>
         <div class="head">
             <div class="section_title">
-                Agregar Empleado
+                Editar Empleado
             </div>
             <div class="botton return-botton">
                 <a href="empleados_lista.php">Regresar al listado</a>
@@ -59,7 +59,7 @@
 
                         <div class="employed-password">
                             <div class="label label-password">Contraseña</div>
-                            <input name="password" class="text text-password" type="password" value="<?php echo $password ?>">
+                            <input name="password" class="text text-password" type="password">
                         </div>
 
                         <div name="rol" class="employed-rol">
@@ -78,7 +78,8 @@
                 
 
                 <div class="message message-employed"></div>
-                <input class="button" onclick="recibe(); return false;" type="submit" value="Registrar">
+                <input type="hidden" name="id" value="<?php echo $id ?>">
+                <input class="button" onclick="edit(); return false;" type="submit" value="Actualizar">
 
             </form>
         </div>
