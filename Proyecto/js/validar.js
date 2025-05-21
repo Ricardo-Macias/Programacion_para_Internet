@@ -32,7 +32,7 @@ function edit() {
     } else {
         document.employed.method = 'post';
         document.employed.action = 'empleados_actualiza.php';
-        documetn.employed.submit();
+        document.employed.submit();
     }
 }
 
