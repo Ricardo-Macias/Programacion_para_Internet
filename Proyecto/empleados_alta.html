@@ -16,8 +16,10 @@
             <div class="section_title">
                 Agregar Empleado
             </div>
-            <div class="botton return-botton">
-                <a href="empleados_lista.php">Regresar al listado</a>
+            <div class="content-botton">
+                <div class="botton">
+                    <a href="empleados_lista.php">Regresar al listado</a>
+                </div>
             </div>
         </div>
         <div class="content">
@@ -59,10 +61,10 @@
 
                     <div>
                         <div class="image">
-
+                            <img id="imagePreview" src="#" alt="image">
                         </div>
                         <div class="button-file">
-                            <input type="file" id="files" name="files">
+                            <input type="file" id="image" name="files" accept="image/*">
                         </div>
                     </div>
 
@@ -73,6 +75,7 @@
                 <input class="button" onclick="recibe(); return false;" type="submit" value="Registrar">
 
             </form>
+            <script src="js/image_preview.js"></script>
         </div>
     </body>
 </html>
