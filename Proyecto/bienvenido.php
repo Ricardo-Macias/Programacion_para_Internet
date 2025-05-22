@@ -4,5 +4,27 @@
     if($userName == ""){
         header('Location: index.php');
     }
-    echo "Hola, bienvenido al sistema ...."
 ?>
+
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="head">
+            <div class="section_title">
+                <?php
+                    echo "Sistema Administracion";
+                ?>
+            </div>
+            <div class="content-menu">
+                <div class="menu">
+                    <?php include ('menu.php'); ?>
+                </div>
+            </div>
+        </div>
+        <div class="content type-text-1">
+            Hola <?php echo $userName ?>, bienvenido al sistema 
+        </div>
+    </body>
+</html>

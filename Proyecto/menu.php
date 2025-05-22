@@ -3,7 +3,7 @@
     </head>
 
     <body>
-        <table width="100%" height="50" align=center>
+        <table width="100%" border="1" height="50" align=center>
             <tr>
                 <td align="center" valign="middle"><a href="#">Inicio</a></td>
                 <td align="center" valign="middle"><a href="#">Empleados</a></td>
