@@ -22,3 +22,30 @@ function deleteAjax(id_employed) {
         });
     }
 }
+
+function login() {
+    var email = document.formLogin.email.value;
+    var pass = document.formLogin.password.value;
+
+    if(email == "" || pass == ""){
+        $('#message').html('Faltan campos por llenar');
+        setTimeout("$('#message').html('');",5000);
+    } else{
+        $.ajax({
+            url      : 'validaUsuario.php',
+            type     : 'post',
+            dataType : 'text',
+            data     : 'correo='+email+'&pass='+pass, //Pasamos dos variables con +'&'
+            success  : function(res){
+                if (res == 1){
+                    window.location.href="bienvenido.php"
+                } else {
+                    $('#message').html('Correo o Contraseña incorrectos ');
+                }
+                
+            }, error: function(){
+                alert('Error archivo no encontrado ...');
+            }
+        });
+    }
+}
