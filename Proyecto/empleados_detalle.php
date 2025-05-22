@@ -1,4 +1,10 @@
 <?php
+    session_start();
+    $userName = $_SESSION['userName'];
+    if($userName == ""){
+        header('Location: index.php');
+    }
+    
     include "funciones/conecta.php";
     $con = conecta();
 

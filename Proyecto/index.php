@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    $userName = $_SESSION['userName'] ?? null;
+    if($userName){
+        header('Location: bienvenido.php ');
+    }
+?>
+
 <html>
     <head>
         <title>Login</title>
