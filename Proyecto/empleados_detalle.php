@@ -14,6 +14,7 @@
     $email = $row['correo'];
     $rol = ($row['rol'] == 1) ? 'Gerente' : 'Ejecutivo';
     $status = ($row['eliminado' == 0]) ? 'Activo' : 'Inactivo';
+    $file = $row['archivo_file'];
 
 ?>
 
@@ -38,6 +39,7 @@
 
         <div class="content grid-content">
             <div class="image">
+                <img id="imageDetails" src="<?php echo "images/".$file ?>"> 
             </div>
             <div class="info">
                 <?php

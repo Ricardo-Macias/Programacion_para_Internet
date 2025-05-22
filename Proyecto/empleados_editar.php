@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="content">
-            <form class="employed" name="employed" method="post">
+            <form enctype="multipart/form-data" class="employed" name="employed" method="post">
                 <div class="grid-form">
                     <div>
                         <div class="employed-name">
@@ -74,7 +74,12 @@
                     </div>
 
                     <div>
-
+                        <div class="image">
+                            <img id="imagePreview" src="#" alt="image">
+                        </div>
+                        <div class="button-file">
+                            <input type="file" id="image" name="files" accept="image/*">
+                        </div>
                     </div>
                 </div>
                 
@@ -84,6 +89,7 @@
                 <input class="button" onclick="edit(); return false;" type="submit" value="Actualizar">
 
             </form>
+            <script src="js/image_preview.js"></script>
         </div>
     </body>
 </html>
