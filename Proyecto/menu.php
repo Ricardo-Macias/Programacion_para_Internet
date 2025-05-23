@@ -12,7 +12,7 @@
                     <td align="center" valign="middle"><a href="#">Productos</a></td>
                     <td align="center" valign="middle"><a href="#">Promociones</a></td>
                     <td align="center" valign="middle"><a href="#">Pedidos</a></td>
-                    <td align="center" valign="middle"><a href="#">Cerrar Sesion</a></td>
+                    <td align="center" valign="middle"><a href="salir.php">Cerrar Sesion</a></td>
                 </tr>
             </table>
         </div>
