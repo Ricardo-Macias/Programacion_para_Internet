@@ -21,14 +21,22 @@
 
     <body>
         <div class="head">
-            <div class="section_title">
-                Agregar Empleado
+            <div class="title-menu">
+                <div class="section_title">
+                    Agregar Empleado
+                </div>
+                <div class="content-menu">
+                    <div class="menu">
+                        <?php include ('menu.php'); ?>
+                    </div>
+                </div>
             </div>
             <div class="content-botton">
                 <div class="botton">
                     <a href="empleados_lista.php">Regresar al listado</a>
                 </div>
             </div>
+            
         </div>
         <div class="content">
             <form enctype="multipart/form-data" class="employed" name="employed" method="post">

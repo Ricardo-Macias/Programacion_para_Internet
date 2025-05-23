@@ -1,0 +1,15 @@
+.content-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+}
+
+.menu td{
+    border-left: 1px solid #85784a ;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(190 198 218);
+}

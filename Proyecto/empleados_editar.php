@@ -35,8 +35,15 @@
 
     <body>
         <div class="head">
-            <div class="section_title">
-                Editar Empleado
+            <div class="title-menu">
+                <div class="section_title">
+                    Editar Empleado
+                </div>
+                <div class="content-menu">
+                    <div class="menu">
+                        <?php include ('menu.php'); ?>
+                    </div>
+                </div>
             </div>
             <div class="content-botton">
                 <div class="botton">

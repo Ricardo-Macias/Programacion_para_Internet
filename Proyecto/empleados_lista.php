@@ -28,14 +28,21 @@
     </head>
     <body>
         <div class="head">
-            <div class="section_title">
-                <?php
-                    echo "Listado de empleados ($num)";
-                ?>
+            <div class="title-menu">
+                <div class="section_title">
+                    <?php
+                        echo "Listado de empleados ($num)";
+                    ?>
+                </div>
+                <div class="content-menu">
+                    <div class="menu">
+                        <?php include ('menu.php'); ?>
+                    </div>
+                </div>
             </div>
             <div class="content-botton">
                 <div class="botton">
-                    <a href="empleados_alta.html">Agregar empleado</a>
+                    <a href="empleados_alta.php">Agregar empleado</a>
                 </div>
             </div>
         </div>

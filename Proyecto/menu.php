@@ -1,18 +1,20 @@
 <html>
     <head>
+        <link href="css/menu.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-        <table width="100%" border="1" height="50" align=center>
-            <tr>
-                <td align="center" valign="middle"><a href="#">Inicio</a></td>
-                <td align="center" valign="middle"><a href="#">Empleados</a></td>
-                <td align="center" valign="middle"><a href="#">Productos</a></td>
-                <td align="center" valign="middle"><a href="#">Promociones</a></td>
-                <td align="center" valign="middle"><a href="#">Pedidos</a></td>
-                <td align="center" valign="middle">Bienvenido USER</td>
-                <td align="center" valign="middle"><a href="#">Cerrar Sesion</a></td>
-            </tr>
-        </table>
+        <div class="content-table">
+            <table class="menu" width="100%" height="20" align=center valign="middle">
+                <tr>
+                    <td align="center" valign="middle"><a href="bienvenido.php">Inicio</a></td>
+                    <td align="center" valign="middle"><a href="empleados_lista.php">Empleados</a></td>
+                    <td align="center" valign="middle"><a href="#">Productos</a></td>
+                    <td align="center" valign="middle"><a href="#">Promociones</a></td>
+                    <td align="center" valign="middle"><a href="#">Pedidos</a></td>
+                    <td align="center" valign="middle"><a href="#">Cerrar Sesion</a></td>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
