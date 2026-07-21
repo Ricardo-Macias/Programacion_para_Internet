@@ -56,6 +56,8 @@ Crear un formulario con un solo select con 5000 opciones.
 
 ### B1. Lista de empleados
 
+Dar diseño usando CSS al archivo empleados_lista.php 
+
 ### B2. Eliminar empleados
 
 ### B3. Alta de empleados
