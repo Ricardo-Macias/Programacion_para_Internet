@@ -119,15 +119,81 @@ Crear un formulario con un solo select con 5000 opciones.
 
 ### B1. Lista de empleados
 
-Dar diseño usando CSS al archivo empleados_lista.php 
+Dar diseño usando CSS al archivo empleados_lista.php.
+La tabal de empleados tendrá las siguientes columnas:
+- id
+- Nombre completo
+- Correo
+- Rol
+- Ver deralle
+- Editar
+- Eliminar
+
+Los datos de las columnas de ver detalle, editar y eliminar estarán vacíos en esta asignación.
+
+**Requerimientos**
+- El archivo empleados_lista.php debe de mostrar la siguiente información:
+   - Titulo de la sección: Listado de empleados (5) *Donde 5 es la cantidad de empleados.
+   - Link para "Crear nuevo registro" (Deberá mandar a un archivo llamado empleados_alta.php) *empledos_alta.php es otra asignación.
+   - La tabla descrita anteriormente.
+- Se debera de usar CSS y contenedores (`div`)
+
 
 ### B2. Eliminar empleados
 
+Programar la función de borrado de un empleado de la tabla "empleados" usando AJAX. Se debe de usar JQUERY, sera un update y no una eliminación real.
+
+**Requerimientos**
+- En la lista de empleados debe de existir un ink o botón que mande llamar una función de javascript.
+- Esta función deberá tener un confirm() para confirmar si se desea borrar, en caso afirmativo se debe de mandar un AJAX que mande el ID del registro que se quiera eliminar a un script de PHP.
+- Este script debe de hacer una consulta PHP/MYSQL para eliminar el registro de la tabla de empleados, el PHP debe de responder si se realizó la eliminación y regresar la bandera a la función de javascript/ajax.
+- Si se elimino exitosamente, entonces se borra la fila correspondiente con JQUERY.
+
 ### B3. Alta de empleados
+
+Se programara el alta de un empleado mediante un formulario a la base de datos, se debe de pedir los siguientes campos:
+- Nombre
+- Apellidos
+- Correo
+- Password
+- Rol: Gerente o Ejecutivo
+
+**Requerimientos**
+- Se debe de validar mediante javascript/jquery que todos los campos estén llenos.
+- Si no estám llenos se debe de mostrar un mensaje en un contenedor (`<div>`) abajo del boton de salvar que diga error (Faltan campos por llenar). Quitar ese mensaje después de 5 segundos.
+- Si están llenos se manda la información al archivo de PHP para que lo salve en la tabla correspondiente.
+- Una vez que este salvado se debe de volver a mostrar el listado de empleados haciendo un redirect con PHP. IMPORTANTE que la contraseña se encripte.
+- Ademas de los campos, el formaulario debe de tener un titulo.
+- Ademas de los campos, el formulario debe de tener tambien un link con la leyenda de "Regresar al listado" su funcion sera regrear al Listado de empleados.
+- IMPORTANTE: Se debe de validar con AJAX que el correo no exista en la base de datos. SI existe se debe de mostrar en un contenedor (`<div>`) a un lado del input del correo el mensaje correspondiente. Quitar el mensaje despues de 5 segundos. Se debe de realizar la validacion con onBlur desde el input de cooreo No desde el boton salvar.
 
 ### B4. Ver detalle empleados
 
+Se programara el ver detalle de un empleado.
+
+**Requerimientos**
+- Desde el listado de empleados se tiene un boton o link de "Ver detalle".
+- Este botón envía el ID para poder hacer una consulta y mostrar los siguientes campos:
+   - Nombre + Apellidos
+   - Correo
+   - Rol
+   - Status (Activo e inactivo)
+- Agregar botón de regresar.
+
 ### B5. Edición de empleados 
+
+Programar la edicion de un empleado mediante un formulario se deben de pedir o poder editar los mismos campos que se usan en la alta.
+
+**Requerimientos**
+- Desde el listado de empleados se tiene un botón de "Editar".
+- Este botón envia el ID para poder hacer una consulta y precargar los campos con los valores por default.
+- Se debe de validar mediante javascript que todos los campos (menos password) esten llenos.
+- IMPORTANTE: Si no están llenos se debe de mostrar un mensaje en un contenedor (`<div>`) abajo del botónn de salvar que diga el error (Faltan campos por llenar). Quitar ese mensaje despues de 5 segundos.
+- Si están llenos se manda la informacion al archivo de PHP para que actualice el registro, es IMPORTANTE que la contraseña se encripte si se escribe una nueva.
+- Una vez que esten editados se debe de volver a mostrar el listado de administradores.
+- Ademas de los campos, el formulario debe de tener un titulo.
+- Ademas de los campos, el formulario debe de tener un link con la leyenda de "Regresar" su funcion sera regresar al listado de empleados.
+- IMPORTANTE: se debe de validar con AJAX que el correo no exista en la base de datos. Si existe se debe de mostrar en un contenedor (`<div>`) a un lado del input de correo el mesaje correspondiente. Quitar el mensaje despues de 5 segundos.
 
 ### B6. Adjuntar archivo
 
