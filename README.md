@@ -197,10 +197,62 @@ Programar la edicion de un empleado mediante un formulario se deben de pedir o p
 
 ### B6. Adjuntar archivo
 
+Programar que se suba una foto para cada empleado.
+
+**Requerimientos**
+- Al dar de alta se debe de poder subir una foto del empleado.
+- Se debe de subir la imagen a la carpeta correspondiente y salvar en la tabla los dos valores: nombre real de la foto y nombre encriptado.
+- Al editar el campo "Foto" no es obligatorio, es decir puede quedar vacio y enviar la informacion para actualizar el registro.
+- Al editar, solo si se selecciona foto se debe de subir el archivo y actualizar los campos de la tabla, por lo tanto no es obligatorio en la edicion subir archivo.
+- La imagen se debe de visualizar en Ver detalle.
+
 ### B7. Login
+
+Crear un formulario (index.php) para validar la existencia de un usuario en la tabla de empleados.
+
+**Requerimientos**
+- El formulario debe de pedir nombre de usuario (email) y contraseña.
+- se debe de validar mediante una funcion de javascript que los campos esten llenos.
+- Si no estan llenos mostrar un mensaje de error en un contenedor.
+- Si estan llenos se debe de mandar la información a un script de PHP usando AJAX. Este script debe de hacer una consulta PHP/MYSQL para verificar que el empleado existe y que esta activo y no eliminado. El PHP debe de responder si existe o no existe y regresarse la bandera a la función de javascript/ajax.
+- Si no existe se muestra el mensaje de error en un contenedor.
+- SI existe el usuario, se hace un redirect con javascript para mostrar la pagina de bienvenida.php
+- Se debe de usar JQUERY.
 
 ### B8. Autentificación y validación con sesiones
 
+Programar el uso de sesiones en el sistema al momento de hacer login
+
+**Requerimientos**
+- Hacer adaptacion de la actividad de Login.
+- Al validar que  exista el usuario en el script de PHP se debe de crear la sesión y crear las variables de sesión correspondientes.
+- Si existe el usuario se debe de cargar la pagina de bienvenido.php mostrando el mensaje de bienvenida y el menú visto y explicado en clase.
+
 ### B9. Menú
 
+Hacer el menu del sistema.
+
+**Requerimientos**
+- Incluir el menú visto y explicado en la clase a los siguientes archivos.
+    - Bienvenida
+    - Listado de empleados
+    - Alta de empleados
+    - Edicion de empleados
+    - Detalle de empleados
+ - Agregar el boton de "Regresar" a los siguientes archivos
+     - Alta de empleados
+     - Edicion de empleados
+     - Detalle de empleados
+
 ### B10. Cerrar sesión
+
+Programar el cierre de sesión
+
+**Requerimientos**
+- El boton de "Cerrar sesión" debe de destruir la sesión y regresar a index.php
+- Programar que el index.php valide que si se tiene una sesión abierta se redireccione con PHP hacia la pagina de Bienvenida.
+- Programar para cada archivo que si No hay sesión abierta se redireccion hacia index.php, se debe de incluir esto en los siguientes archivos:
+    - Lista de empleados
+    - Alta de empleados
+    - Editar empleados
+    - Ver detalle de empleados 
